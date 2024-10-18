@@ -6,6 +6,9 @@ title = 'Minbok Wi'
 ## About Me
 
 {{< figure src="/images/profile.png" width="300" alt="My Profile Image" class="left" >}}
+
+I am currently a visiting researcher/scholar at The University of Texas at Austin, advised by Professor Mattan Erez.
+
 Hi! I am a Ph.D. candidate at Seoul National University ([SNU](https://en.snu.ac.kr/)), advised by Professor Jung Ho Ahn.
 Before I joined the [SCALE laboratory](https://scale.snu.ac.kr) for my Ph.D., I completed my BSE in Electrical and Computer Engineering at SNU.
 
