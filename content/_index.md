@@ -20,7 +20,10 @@ Also, I'm interested in enhancing system reliability against silient data corrup
 
 ## Publications
 
-**[ISCA2024]** Hwayong Nam, Seungmin Baek, **Minbok Wi**, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, \"DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands,\" ISCA,2024
+**[ASPLOS2025]** Seungmin Beak, **Minbok Wi**, Seonyong Park, Hwayong Nam, Michael Jaemin Kim, Nam Sung Kim, Jung Ho
+Ahn, \"Marionette: A RowHammer Attack via Row Coupling,\" ASPLOS, 2025
+
+**[ISCA2024]** Hwayong Nam, Seungmin Baek, **Minbok Wi**, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, \"DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands,\" ISCA, 2024
 
 **[ASPLOS2024]** Chihun Song, Michael Jaemin Kim, Tianchen Wang, Houxiang Ji, Jinghan Huang, Ipoom Jeong, Jaehyun Park, Hwayong Nam, **Minbok Wi**, Jung Ho Ahn, Nam Sung Kim, \"TAROT: A CXL SmartNIC-Based Defense Against Multi-bit Errors by Row-Hammer Attacks,\" ASPLOS, 2024
 
