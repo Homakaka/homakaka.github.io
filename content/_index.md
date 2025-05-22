@@ -20,6 +20,8 @@ Also, I'm interested in enhancing system reliability against silient data corrup
 
 ## Publications
 
+**[DRAMSec2025]** **Minbok Wi**, Seungmin Baek, Seonyong Park, Mattan Erez, and Jung Ho Ahn, \"Sudoku: Decomposing DRAM Address Mapping into Component Functions,\" DRAMSec, 2025 (to appear)
+
 **[ASPLOS2026]** Yoonyul Yoo, **Minbok Wi**, Jaeho Shin, Yesin Ryu, Yoojin Kim, Seonyong Park, Saeid Gorgin, Jung Ho Ahn, Jungrae Kim, \"RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks,\" ASPLOS, 2026 (to appear)
 
 **[ASPLOS2025]** Seungmin Baek, **Minbok Wi**, Seonyong Park, Hwayong Nam, Michael Jaemin Kim, Nam Sung Kim, Jung Ho Ahn, \"Marionette: A RowHammer Attack via Row Coupling,\" ASPLOS, 2025
