@@ -19,8 +19,9 @@ Also, I'm interested in enhancing system reliability against silient data corrup
 [GitHub-lab](https://github.com/minbok-wi) | [GitHub-personal](https://github.com/homakaka) | [Google Scholar](https://scholar.google.com/citations?user=Kc0JBMIAAAAJ&hl=ko&oi=ao) | [LinkedIn](https://www.linkedin.com/in/minbok-wi-9ab99b1b9/)
 
 ## Publications
+**[CAL2025]** Jumin Kim, Seungmin Baek, **Minbok Wi**, Hwayong Nam, Michael Jaemin Kim, Sukhan Lee, Kyomin Sohn, and Jung Ho Ahn, \"Per-Row Activation Counting on Real Hardware: Demystifying Performance Overheads,\" IEEE Computer Architectu Letters (to appear)
 
-**[DRAMSec2025]** **Minbok Wi**, Seungmin Baek, Seonyong Park, Mattan Erez, and Jung Ho Ahn, \"Sudoku: Decomposing DRAM Address Mapping into Component Functions,\" DRAMSec, 2025 (to appear)
+**[DRAMSec2025]** **Minbok Wi**, Seungmin Baek, Seonyong Park, Mattan Erez, and Jung Ho Ahn, \"Sudoku: Decomposing DRAM Address Mapping into Component Functions,\" DRAMSec, 2025
 
 **[ASPLOS2025]** Seungmin Baek, **Minbok Wi**, Seonyong Park, Hwayong Nam, Michael Jaemin Kim, Nam Sung Kim, Jung Ho Ahn, \"Marionette: A RowHammer Attack via Row Coupling,\" ASPLOS, 2025
 
