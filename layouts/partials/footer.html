@@ -1,1 +1,5 @@
-{{ if ne .Site.Params.hideMadeWithLine true }}Copyright @ Minbok Wi 2024</a>{{ end }}
+<footer>
+  <p>
+    Copyright © {{ now.Format "2006" }} {{ .Site.Copyright | default .Site.Title }}
+  </p>
+</footer>
