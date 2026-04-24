@@ -2,39 +2,37 @@
 title = 'Minbok Wi'
 +++
 ---
-
 ## About Me
 
 <div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 300px; max-width:450px">
+  <div style="flex: 1; min-width: 280px; max-width: 350px;">
     {{< figure src="/images/MtHalla.jpeg" width="100%" alt="My Profile Image" >}}
   </div>
 
-  <div style="flex: 2; min-width: 500px;">
+  <div style="flex: 2; min-width: 280px; max-width: 100%;">
     <p>
-      Hello! I'm Minbok Wi.
+      Hello! I'm <strong>Minbok Wi</strong>.
     </p>
     <p>
-      I am a <strong>Staff Engineer</strong> in the <strong>AP Architecture Group (MX Division) at Samsung Electronics</strong>. I hold a Ph.D. from Seoul National University, where I wans privileged to be advised by <strong>Prof. Jung Ho Ahn</strong>. During my doctoral studies, I also spent time as a Visiting Scholar at <strong>UT Austin</strong>, collaborating with <strong>Prof. Mattan Erez</strong>.
+      I am a <strong>Staff Engineer</strong> in the <strong>AP Architecture Group (MX Division) at Samsung Electronics</strong>. I hold a Ph.D. from Seoul National University, where I was privileged to be advised by <strong>Prof. Jung Ho Ahn</strong>. During my doctoral studies, I also spent time as a Visiting Scholar at <strong>UT Austin</strong>, collaborating with <strong>Prof. Mattan Erez</strong>.
     </p>
+    <p>
       My research foundation lies in the <strong>security and reliability of memory systems</strong>. Building on this expertise, I now specialize in the <strong>architectural modeling and performance optimization of Mobile Application Processors (SoCs)</strong>. As a Performance Architect, I focus on the synergy between CPU microarchitecture, interconnects, and memory subsystems to handle increasingly complex workloads. My work involves driving SoC architecture definitions, analyzing workloads performance to eliminate system-level bottlenecks, and maximizing power efficiency for next-generation mobile platforms.
-    <p>
     </p>
-    <div style="margin-top: 20px;">
-      <a href="https://github.com/homakaka"><img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github" alt="GitHub"></a>
-      <a href="https://scholar.google.com/citations?user=3f75zVUAAAAJ"><img src="https://img.shields.io/badge/Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white" alt="Scholar"></a>
-      <a href="https://www.linkedin.com/in/minbok-wi-9ab99b1b9/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-      <a href="https://orcid.org/0000-0003-4202-6201">
-  <img src="https://img.shields.io/badge/ORCID-0000--0003--4202--6201-A6CE39?logo=orcid&logoColor=white" alt="ORCID">
-</a>
-      <a href="https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing"><img src="https://img.shields.io/badge/CV-Google%20Drive-blue?style=flat&logo=googledrive&logoColor=white" alt="CV"></a>
+    <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
+      <a href="https://github.com/homakaka" target="_blank"><img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github" alt="GitHub"></a>
+      <a href="https://scholar.google.com/citations?user=3f75zVUAAAAJ" target="_blank"><img src="https://img.shields.io/badge/Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white" alt="Scholar"></a>
+      <a href="https://www.linkedin.com/in/minbok-wi-9ab99b1b9/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+      <a href="https://orcid.org/0000-0003-4202-6201" target="_blank"><img src="https://img.shields.io/badge/ORCID-0000--0003--4202--6201-A6CE39?logo=orcid&logoColor=white" alt="ORCID"></a>
+      <a href="https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/CV-Google%20Drive-blue?style=flat&logo=googledrive&logoColor=white" alt="CV"></a>
     </div>
+    
   </div>
 </div>
 
-<br>
-
 ## Publications
+
+**[ISCA26]** Jumin Kim\*, Seungmin Baek\*, Hwayong Nam, **Minbok Wi**, Nam Sung Kim, Jung Ho Ahn, [\"PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting,\"]() ISCA, 2026 (\*co-first author)
 
 **[Access26]** **Minbok Wi\***, Wanju Doh\*, Seungmin Baek, Seonyong Park, Mattan Erez, Jung Ho Ahn, [\"Sudoku: Refining DRAM Address Mapping through Advanced Timing and Configuration Analysis,\"](https://ieeexplore.ieee.org/document/11443109) IEEE Access, 2026 (\*co-first author)
 
