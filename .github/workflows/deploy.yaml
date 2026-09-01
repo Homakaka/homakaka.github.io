@@ -12,18 +12,20 @@ permissions:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true
           fetch-depth: 0
 
       - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
-          exteneded: true
+          # Pinned on purpose: "latest" silently upgraded to 0.165.0 and broke
+          # the build when the "_build" front matter key was removed.
+          hugo-version: "0.165.0"
+          extended: true
 
       - name: Build
         run: hugo -t hugo-bearblog

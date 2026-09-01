@@ -5,7 +5,7 @@ theme = 'hugo-bearblog'
 title = "Minbok Wi"
 author = "Minbok Wi"
 copyright = "Minbok Wi"
-languageCode = "en-US"
+locale = "en-US"
 
 enableRobotsTXT = true
 disableKinds = ["taxonomy"]
