@@ -1,2 +1,10 @@
+# macOS
 .DS_Store
+
+# Hugo build artifacts.
+# The site is built and deployed by .github/workflows/deploy.yaml, which runs
+# `hugo` and publishes ./public to the gh-pages branch, so the built output
+# does not belong in main.
+public/
+resources/_gen/
 .hugo_build.lock
