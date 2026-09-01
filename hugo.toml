@@ -27,14 +27,14 @@ ignoreErrors = ["error-disable-taxonomy"]
   role = "Staff Engineer, AP Architecture Group (MX Division), Samsung Electronics"
 
   [[params.links]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/minbok-wi-9ab99b1b9/"
+    name = "CV"
+    url = "https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing"
   [[params.links]]
     name = "Google Scholar"
     url = "https://scholar.google.com/citations?user=3f75zVUAAAAJ"
   [[params.links]]
-    name = "CV"
-    url = "https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/minbok-wi-9ab99b1b9/"
   [[params.links]]
     name = "GitHub"
     url = "https://github.com/homakaka"
