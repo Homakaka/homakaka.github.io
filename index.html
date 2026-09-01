@@ -115,6 +115,10 @@
 
     .col[hidden] { display: none; }
 
+     
+    .col:first-child { margin-left: auto; }
+    .col:last-child { margin-right: auto; border-right: 0; }
+
     .col--nav { flex-basis: 232px; }
     .col--photo { flex-basis: clamp(230px, 20vw, 290px); }
 
@@ -251,6 +255,7 @@
         scroll-snap-align: none;
       }
 
+      .col:first-child, .col:last-child { margin: 0; }
       .col:last-child { border-bottom: 0; }
     }
   </style>
