@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Site.Params.brand | default .Site.Title }}</title>
+  {{- partial "favicon.html" . -}}
+  {{- partial "seo_tags.html" . -}}
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{- partial "site-style.html" . -}}
+
+  <style>
+    html, body { height: 100%; }
+
+    .canvas {
+      display: flex;
+      align-items: stretch;
+      height: 100vh;
+      height: 100dvh;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x proximity;
+    }
+
+    .col {
+      flex: 0 0 clamp(260px, 24vw, 330px);
+      height: 100%;
+      overflow-y: auto;
+      padding: 2.2rem 1.6rem 3rem;
+      border-right: 1px solid var(--line);
+      scroll-snap-align: start;
+    }
+
+    .col[hidden] { display: none; }
+
+    .col--nav { flex-basis: 232px; }
+    .col--photo { flex-basis: clamp(230px, 20vw, 290px); }
+    .col--links { flex-basis: max-content; }
+    .col--links .link-list a { white-space: nowrap; }
+
+    .col-title {
+      margin: 0 0 1.4rem;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--fg);
+    }
+
+    .col h1, .col h2, .col h3, .col h4 {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .col p { margin: 0 0 1rem; }
+
+    #col-research ul {
+      list-style: none;
+      margin: 0 0 1rem;
+      padding: 0;
+    }
+
+    #col-research li {
+      margin: 0 0 0.85rem;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    #col-research li::before { content: "-\00a0"; color: var(--muted); }
+
+    /* leftmost nav pane */
+    .nav-name {
+      display: inline-block;
+      margin: 0 0 1.7rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .nav-name:hover { color: var(--muted); }
+
+    .nav-section { margin: 0 0 1.8rem; }
+
+    .tab {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      line-height: 1.4;
+      color: var(--fg);
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .tab:hover { color: var(--muted); }
+
+    .tab.is-active {
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    #blog-list { margin-top: 0.7rem; }
+
+    .invert {
+      display: block;
+      margin: 0 0 0.6rem;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      font-size: 16px;
+      line-height: 1;
+      color: var(--muted);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .invert:hover { color: var(--fg); }
+
+    .copyright { margin: 0; color: var(--muted); font-size: 12px; }
+
+    .photo { display: block; width: 100%; height: auto; }
+
+    .link-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .link-list li { margin: 0.5rem 0; }
+
+    /* dash bullet list (blog) */
+    .dash-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dash-list li {
+      margin: 0 0 0.55rem;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .dash-list li::before { content: "-\00a0"; color: var(--muted); }
+
+    .dash-list .date { color: var(--muted); }
+
+    .blog-empty { margin: 0; color: var(--muted); }
+
+    @media (max-width: 700px) {
+      html, body { height: auto; }
+      body { overflow-x: hidden; }
+
+      .canvas {
+        display: block;
+        height: auto;
+        overflow: visible;
+        scroll-snap-type: none;
+      }
+
+      .col {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: visible;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        scroll-snap-align: none;
+      }
+
+      .col:last-child { border-bottom: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="canvas">
+    <nav class="col col--nav">
+      <a class="nav-name" href="{{ "/" | relURL }}">위민복<br>Minbok Wi</a>
+
+      <div class="nav-section">
+        <button type="button" class="tab" id="blog-tab" aria-controls="blog-list" aria-expanded="false">Blog</button>
+        {{ $posts := where .Site.RegularPages "Type" "blog" }}
+        <div id="blog-list" hidden>
+          {{ with $posts }}
+          <ul class="dash-list">
+            {{ range . }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="date">{{ .Date.Format "2006" }}</span></li>
+            {{ end }}
+          </ul>
+          {{ else }}
+          <p class="blog-empty">Nothing yet.</p>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="nav-foot">
+        <button type="button" class="invert" id="invert" aria-label="Switch black / white" title="Switch black / white">&#9680;</button>
+        <p class="copyright">&copy; {{ now.Format "2006" }} {{ .Site.Copyright | default .Site.Title }}</p>
+      </div>
+    </nav>
+
+    <section class="col col--photo" id="col-photo">
+      <p class="col-title">Photo</p>
+      <img class="photo" src="/images/MtHalla.jpeg" alt="Minbok Wi">
+    </section>
+
+    <section class="col" id="col-about">
+      <p class="col-title">About</p>
+      {{ with .Site.GetPage "/about" }}{{ .Content }}{{ end }}
+    </section>
+
+    <section class="col" id="col-research">
+      <p class="col-title">Research</p>
+      {{ with .Site.GetPage "/research" }}{{ .Content }}{{ end }}
+    </section>
+
+    <section class="col" id="col-pubs">
+      <p class="col-title">Publications</p>
+      {{ with .Site.GetPage "/publications" }}{{ .Content }}{{ end }}
+    </section>
+
+    <section class="col col--links" id="col-links">
+      <p class="col-title">Links</p>
+      <ul class="link-list">
+        {{ range .Site.Params.links }}
+        <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+
+      var blogTab = document.getElementById('blog-tab');
+      var blogList = document.getElementById('blog-list');
+      if (blogTab && blogList) {
+        blogTab.addEventListener('click', function () {
+          var open = blogList.hidden;
+          blogList.hidden = !open;
+          blogTab.setAttribute('aria-expanded', open ? 'true' : 'false');
+          blogTab.classList.toggle('is-active', open);
+        });
+      }
+
+      var invert = document.getElementById('invert');
+      if (invert) {
+        var currentTheme = function () {
+          var t = root.getAttribute('data-theme');
+          if (t === 'dark' || t === 'light') return t;
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        invert.addEventListener('click', function () {
+          var nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', nextTheme);
+          try { localStorage.setItem('theme', nextTheme); } catch (e) {}
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>
