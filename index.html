@@ -2,281 +2,382 @@
 <html lang="en-US">
 
 <head>
-	<meta name="generator" content="Hugo 0.160.1">
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+	<meta name="generator" content="Hugo 0.165.0">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Minbok Wi | Minbok Wi</title>
+  <title>위민복 Minbok Wi</title>
+
 <meta name="title" content="Minbok Wi" />
 <meta name="description" content="Minbok Wi&#39;s personal website." />
 <meta name="keywords" content="" />
 
 
 <meta property="og:url" content="https://homakaka.github.io/">
-  <meta property="og:site_name" content="Minbok Wi">
-  <meta property="og:title" content="Minbok Wi">
-  <meta property="og:description" content="About Me Hello! I&#39;m Minbok Wi. I am a Staff Engineer in the AP Architecture Group (MX Division) at Samsung Electronics. I hold a Ph.D. from Seoul National University, where I was privileged to be advised by Prof. Jung Ho Ahn. During my doctoral studies, I also spent time as a Visiting Scholar at UT Austin, collaborating with Prof. Mattan Erez.">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="website">
+	<meta property="og:site_name" content="Minbok Wi">
+	<meta property="og:title" content="Minbok Wi">
+	<meta property="og:description" content="Minbok Wi&#39;s personal website.">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
 
 
 
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Minbok Wi">
-  <meta name="twitter:description" content="About Me Hello! I&#39;m Minbok Wi. I am a Staff Engineer in the AP Architecture Group (MX Division) at Samsung Electronics. I hold a Ph.D. from Seoul National University, where I was privileged to be advised by Prof. Jung Ho Ahn. During my doctoral studies, I also spent time as a Visiting Scholar at UT Austin, collaborating with Prof. Mattan Erez.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Minbok Wi">
+	<meta name="twitter:description" content="Minbok Wi&#39;s personal website.">
 
 
 
 
-  <meta itemprop="name" content="Minbok Wi">
-  <meta itemprop="description" content="About Me Hello! I&#39;m Minbok Wi. I am a Staff Engineer in the AP Architecture Group (MX Division) at Samsung Electronics. I hold a Ph.D. from Seoul National University, where I was privileged to be advised by Prof. Jung Ho Ahn. During my doctoral studies, I also spent time as a Visiting Scholar at UT Austin, collaborating with Prof. Mattan Erez.">
-  <meta itemprop="wordCount" content="581">
+	<meta itemprop="name" content="Minbok Wi">
+	<meta itemprop="description" content="Minbok Wi&#39;s personal website.">
 <meta name="referrer" content="no-referrer-when-downgrade" />
-
   <link rel="alternate" type="application/rss+xml" href="https://homakaka.github.io/index.xml" title="Minbok Wi" />
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-  }
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
+<script>
+  try {
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
 
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-    overflow-x: auto;
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-    border-left: 1px solid #999;
-    color: #222;
-    padding-left: 20px;
-    font-style: italic;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #111111;
+    --muted: #6b6b6b;
+    --line: #e4e4e4;
   }
 
   @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
+    :root:not([data-theme="light"]) {
+      --bg: #000000;
+      --fg: #ffffff;
+      --muted: #9a9a9a;
+      --line: #333333;
     }
   }
 
-</style>
+  :root[data-theme="dark"] {
+    --bg: #000000;
+    --fg: #ffffff;
+    --muted: #9a9a9a;
+    --line: #333333;
+  }
 
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+      system-ui, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  a {
+    color: var(--fg);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  a:hover { color: var(--muted); }
+
+  img { max-width: 100%; }
+</style>
+<style>
+    html, body { height: 100%; }
+
+    .canvas {
+      display: flex;
+      align-items: stretch;
+      height: 100vh;
+      height: 100dvh;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x proximity;
+    }
+
+    .col {
+      flex: 0 0 clamp(260px, 24vw, 330px);
+      height: 100%;
+      overflow-y: auto;
+      padding: 2.2rem 1.6rem 3rem;
+      border-right: 1px solid var(--line);
+      scroll-snap-align: start;
+    }
+
+    .col[hidden] { display: none; }
+
+    .col--nav { flex-basis: 232px; }
+    .col--photo { flex-basis: clamp(230px, 20vw, 290px); }
+    .col--links { flex-basis: max-content; }
+    .col--links .link-list a { white-space: nowrap; }
+
+    .col-title {
+      margin: 0 0 1.4rem;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--fg);
+    }
+
+    .col h1, .col h2, .col h3, .col h4 {
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .col p { margin: 0 0 1rem; }
+
+    #col-research ul {
+      list-style: none;
+      margin: 0 0 1rem;
+      padding: 0;
+    }
+
+    #col-research li {
+      margin: 0 0 0.85rem;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    #col-research li::before { content: "-\00a0"; color: var(--muted); }
+
+     
+    .nav-name {
+      display: inline-block;
+      margin: 0 0 1.7rem;
+      font-weight: 700;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .nav-name:hover { color: var(--muted); }
+
+    .nav-section { margin: 0 0 1.8rem; }
+
+    .tab {
+      display: block;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      line-height: 1.4;
+      color: var(--fg);
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .tab:hover { color: var(--muted); }
+
+    .tab.is-active {
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    #blog-list { margin-top: 0.7rem; }
+
+    .invert {
+      display: block;
+      margin: 0 0 0.6rem;
+      padding: 0;
+      border: 0;
+      background: none;
+      font: inherit;
+      font-size: 16px;
+      line-height: 1;
+      color: var(--muted);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .invert:hover { color: var(--fg); }
+
+    .copyright { margin: 0; color: var(--muted); font-size: 12px; }
+
+    .photo { display: block; width: 100%; height: auto; }
+
+    .link-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .link-list li { margin: 0.5rem 0; }
+
+     
+    .dash-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dash-list li {
+      margin: 0 0 0.55rem;
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+
+    .dash-list li::before { content: "-\00a0"; color: var(--muted); }
+
+    .dash-list .date { color: var(--muted); }
+
+    .blog-empty { margin: 0; color: var(--muted); }
+
+    @media (max-width: 700px) {
+      html, body { height: auto; }
+      body { overflow-x: hidden; }
+
+      .canvas {
+        display: block;
+        height: auto;
+        overflow: visible;
+        scroll-snap-type: none;
+      }
+
+      .col {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: visible;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        scroll-snap-align: none;
+      }
+
+      .col:last-child { border-bottom: 0; }
+    }
+  </style>
 </head>
 
 <body>
-  <header><a href="/" class="title">
-  <h2>Minbok Wi</h2>
-</a>
-<nav><a href="/">Home</a>
+  <div class="canvas">
+    <nav class="col col--nav">
+      <a class="nav-name" href="/">위민복<br>Minbok Wi</a>
 
-<a href="/blog/">Blog</a>
+      <div class="nav-section">
+        <button type="button" class="tab" id="blog-tab" aria-controls="blog-list" aria-expanded="false">Blog</button>
+        
+        <div id="blog-list" hidden>
+          
+          <p class="blog-empty">Nothing yet.</p>
+          
+        </div>
+      </div>
 
+      <div class="nav-foot">
+        <button type="button" class="invert" id="invert" aria-label="Switch black / white" title="Switch black / white">&#9680;</button>
+        <p class="copyright">&copy; 2026 Minbok Wi</p>
+      </div>
+    </nav>
 
-</nav>
-</header>
-  <main>
-<hr>
-<h2 id="about-me">About Me</h2>
-<div style="display: flex; align-items: flex-start; gap: 30px; flex-wrap: wrap;">
-  <div style="flex: 1; min-width: 280px; max-width: 350px;">
-    <figure><img src="/images/MtHalla.jpeg"
-        alt="My Profile Image" width="100%">
-    </figure>
+    <section class="col col--photo" id="col-photo">
+      <p class="col-title">Photo</p>
+      <img class="photo" src="/images/MtHalla.jpeg" alt="Minbok Wi">
+    </section>
 
+    <section class="col" id="col-about">
+      <p class="col-title">About</p>
+      <p>Hello! I&rsquo;m Minbok Wi.</p>
+<p>I am a Staff Engineer in the AP Architecture Group (MX Division) at Samsung Electronics. As
+a performance architect, I model and develop the subsystems of mobile Application
+Processors (SoCs): driving architecture definition, analyzing workload performance to
+remove system-level bottlenecks, and maximizing power efficiency for next-generation
+mobile platforms.</p>
+<p>I received my Ph.D. from Seoul National University, where I was advised by
+<a href="https://geniajh.github.io/">Prof. Jung Ho Ahn</a>. During my doctoral studies, I spent time
+as a Visiting Scholar at UT Austin, collaborating with
+<a href="https://lph.ece.utexas.edu/merez/MattanErez/Home">Prof. Mattan Erez</a>. My doctoral research
+centered on the security, reliability, and characterization of DRAM-based memory systems.</p>
+
+    </section>
+
+    <section class="col" id="col-research">
+      <p class="col-title">Research</p>
+      <p>My work spans <strong>computer architecture, memory architecture &amp; systems, and hardware security &amp; reliability</strong>.</p>
+<ul>
+<li><strong>Computer architecture:</strong> architectural modeling and performance optimization of processor and system-on-chip subsystems across CPU, interconnect, and memory; system-level bottleneck analysis and power-efficiency trade-offs. In my current role at Samsung, this focuses on mobile Application Processors (SoCs).</li>
+<li><strong>Memory architecture &amp; systems:</strong> DRAM microarchitecture, address mapping, and timing behavior; memory-subsystem performance; emerging memory interfaces such as CXL.</li>
+<li><strong>Hardware security &amp; reliability:</strong> RowHammer and DRAM disturbance attacks and their mitigations; DRAM reverse-engineering through direct command issuing; reliable and secure memory design (on-die ECC, CXL memory).</li>
+</ul>
+<p>Full publication record on <a href="https://scholar.google.com/citations?user=3f75zVUAAAAJ">Google Scholar</a>.</p>
+
+    </section>
+
+    <section class="col" id="col-pubs">
+      <p class="col-title">Publications</p>
+      <p><strong>[ISCA26]</strong> Jumin Kim*, Seungmin Baek*, Hwayong Nam, <strong>Minbok Wi</strong>, Nam Sung Kim, Jung Ho Ahn, <a href="">&ldquo;PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting,&rdquo;</a> ISCA, 2026 (*co-first author)</p>
+<p><strong>[Access26]</strong> <strong>Minbok Wi*</strong>, Wanju Doh*, Seungmin Baek, Seonyong Park, Mattan Erez, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/11443109">&ldquo;Sudoku: Refining DRAM Address Mapping through Advanced Timing and Configuration Analysis,&rdquo;</a> IEEE Access, 2026 (*co-first author)</p>
+<p><strong>[ASPLOS26]</strong> <strong>Minbok Wi</strong>, Yoonyul Yoo, Yoojin Kim, Jaeho Shin, Jumin Kim, Yesin Ryu, Saeid Gorgin, Jung Ho Ahn, Jungrae Kim, <a href="https://dl.acm.org/doi/10.1145/3779212.3790213">&ldquo;RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks,&rdquo;</a> ASPLOS, 2026 [<strong>Best Paper Honorable Mention</strong>]</p>
+<p><strong>[HPCA26]</strong> Chihun Song, Austin Antony Cruz, Michael Jaemin Kim, <strong>Minbok Wi</strong>, Gaohan Ye, Kyungsan Kim, Sangyeol Lee, Jung Ho Ahn, and Nam Sung Kim, <a href="https://ieeexplore.ieee.org/abstract/document/11408527">&ldquo;ReScue: Reliable and Secure CXL Memory,&rdquo;</a> HPCA, 2026</p>
+<p><strong>[CAL25]</strong> Jumin Kim, Seungmin Baek, <strong>Minbok Wi</strong>, Hwayong Nam, Michael Jaemin Kim, Sukhan Lee, Kyomin Sohn, and Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/abstract/document/11074718">&ldquo;Per-Row Activation Counting on Real Hardware: Demystifying Performance Overheads,&rdquo;</a> IEEE Computer Architecture Letters (Volume: 24, Issue: 2, July-Dec. 2025): 217-220 [<strong>Best of CAL</strong>]</p>
+<p><strong>[DRAMSec25]</strong> <strong>Minbok Wi</strong>, Seungmin Baek, Seonyong Park, Mattan Erez, and Jung Ho Ahn, <a href="https://arxiv.org/abs/2506.15918">&ldquo;Sudoku: Decomposing DRAM Address Mapping into Component Functions,&rdquo;</a> DRAMSec, 2025</p>
+<p><strong>[ASPLOS25]</strong> Seungmin Baek, <strong>Minbok Wi</strong>, Seonyong Park, Hwayong Nam, Michael Jaemin Kim, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/10.1145/3669940.3707242">&ldquo;Marionette: A RowHammer Attack via Row Coupling,&rdquo;</a> ASPLOS, 2025</p>
+<p><strong>[ISCA24]</strong> Hwayong Nam, Seungmin Baek, <strong>Minbok Wi</strong>, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/10.1109/ISCA59077.2024.00083">&ldquo;DRAMScope: Uncovering DRAM Microarchitecture and Characteristics by Issuing Memory Commands,&rdquo;</a> ISCA, 2024</p>
+<p><strong>[ASPLOS24]</strong> Chihun Song, Michael Jaemin Kim, Tianchen Wang, Houxiang Ji, Jinghan Huang, Ipoom Jeong, Jaehyun Park, Hwayong Nam, <strong>Minbok Wi</strong>, Jung Ho Ahn, Nam Sung Kim, <a href="https://dl.acm.org/doi/10.1145/3620666.3651325">&ldquo;TAROT: A CXL SmartNIC-Based Defense Against Multi-bit Errors by Row-Hammer Attacks,&rdquo;</a> ASPLOS, 2024</p>
+<p><strong>[CAL23]</strong> Hwayong Nam, Seungmin Baek, <strong>Minbok Wi</strong>, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/abs/10.1109/LCA.2023.3296153">&ldquo;X-ray: Discovering DRAM Internal Structure and Error Characteristics by Issuing Memory Commands,&rdquo;</a> IEEE Computer Architecture Letters (Volume: 22, Issue: 2, July-Dec. 2023): 89-92</p>
+<p><strong>[MICRO23]</strong> Michael Jaemin Kim, <strong>Minbok Wi</strong>, Jaehyun Park, Seoyoung Ko, Jaewan Choi, Hwayong Nam, Nam Sung Kim, Jung Ho Ahn, Eojin Lee, <a href="https://ieeexplore.ieee.org/document/10411397">&ldquo;How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM,&rdquo;</a> MICRO, 2023</p>
+<p><strong>[HPCA23]</strong> <strong>Minbok Wi*</strong>, Jaehyun Park*, Seoyoung Ko, Michael Jaemin Kim, Nam Sung Kim, Eojin Lee, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/10070966">&ldquo;SHADOW: Preventing Row Hammer in DRAM using Intra-Subarray Row-Shuffling,&rdquo;</a> HPCA, 2023 (*equally contributed)</p>
+<p><strong>[TC20]</strong> Byeongho Kim, Jongwook Chung, Eojin Lee, Wonkyung Jung, Sunjung Lee, Jaewan Choi, Jaehyun Park, <strong>Minbok Wi</strong>, Sukhan Lee, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/9055168">&ldquo;MViD: Sparse Matrix-Vector Multiplication in Mobile DRAM for Accelerating Recurrent Neural Networks,&rdquo;</a> IEEE Transactions on Computers (Volume: 69, Issue: 7, 01 July 2020): 955-967</p>
+
+    </section>
+
+    <section class="col col--links" id="col-links">
+      <p class="col-title">Links</p>
+      <ul class="link-list">
+        
+        <li><a href="https://www.linkedin.com/in/minbok-wi-9ab99b1b9/" target="_blank" rel="noopener">LinkedIn</a></li>
+        
+        <li><a href="https://scholar.google.com/citations?user=3f75zVUAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        
+        <li><a href="https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+        
+        <li><a href="https://github.com/homakaka" target="_blank" rel="noopener">GitHub</a></li>
+        
+        <li><a href="https://orcid.org/0000-0003-4202-6201" target="_blank" rel="noopener">ORCID</a></li>
+        
+      </ul>
+    </section>
   </div>
-  <div style="flex: 2; min-width: 280px; max-width: 100%;">
-    <p>
-      Hello! I'm <strong>Minbok Wi</strong>.
-    </p>
-    <p>
-      I am a <strong>Staff Engineer</strong> in the <strong>AP Architecture Group (MX Division) at Samsung Electronics</strong>. I hold a Ph.D. from Seoul National University, where I was privileged to be advised by <strong>Prof. Jung Ho Ahn</strong>. During my doctoral studies, I also spent time as a Visiting Scholar at <strong>UT Austin</strong>, collaborating with <strong>Prof. Mattan Erez</strong>.
-    </p>
-    <p>
-      My research foundation lies in the <strong>security and reliability of memory systems</strong>. Building on this expertise, I now specialize in the <strong>architectural modeling and performance optimization of Mobile Application Processors (SoCs)</strong>. As a Performance Architect, I focus on the synergy between CPU microarchitecture, interconnects, and memory subsystems to handle increasingly complex workloads. My work involves driving SoC architecture definitions, analyzing workloads performance to eliminate system-level bottlenecks, and maximizing power efficiency for next-generation mobile platforms.
-    </p>
-    <div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px;">
-      <a href="https://github.com/homakaka" target="_blank"><img src="https://img.shields.io/badge/GitHub-black?style=flat&logo=github" alt="GitHub"></a>
-      <a href="https://scholar.google.com/citations?user=3f75zVUAAAAJ" target="_blank"><img src="https://img.shields.io/badge/Scholar-4285F4?style=flat&logo=google-scholar&logoColor=white" alt="Scholar"></a>
-      <a href="https://www.linkedin.com/in/minbok-wi-9ab99b1b9/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-      <a href="https://orcid.org/0000-0003-4202-6201" target="_blank"><img src="https://img.shields.io/badge/ORCID-0000--0003--4202--6201-A6CE39?logo=orcid&logoColor=white" alt="ORCID"></a>
-      <a href="https://docs.google.com/document/d/13rVSENkJ0MFpxon_ihRkUQhXHW2S-CvXUINBWNVfUMA/edit?usp=sharing" target="_blank"><img src="https://img.shields.io/badge/CV-Google%20Drive-blue?style=flat&logo=googledrive&logoColor=white" alt="CV"></a>
-    </div>
-  </div>
-</div>
-<h2 id="publications">Publications</h2>
-<p><strong>[ISCA26]</strong> Jumin Kim*, Seungmin Baek*, Hwayong Nam, <strong>Minbok Wi</strong>, Nam Sung Kim, Jung Ho Ahn, <a href="">&quot;PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting,&quot;</a> ISCA, 2026 (*co-first author)</p>
-<p><strong>[Access26]</strong> <strong>Minbok Wi*</strong>, Wanju Doh*, Seungmin Baek, Seonyong Park, Mattan Erez, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/11443109">&quot;Sudoku: Refining DRAM Address Mapping through Advanced Timing and Configuration Analysis,&quot;</a> IEEE Access, 2026 (*co-first author)</p>
-<p><strong>[ASPLOS26]</strong> <strong>Minbok Wi</strong>, Yoonyul Yoo, Yoojin Kim, Jaeho Shin, Jumin Kim, Yesin Ryu, Saeid Gorgin, Jung Ho Ahn, Jungrae Kim, <a href="https://dl.acm.org/doi/10.1145/3779212.3790213">&quot;RowArmor: Efficient and Comprehensive Protection Against DRAM Disturbance Attacks,&quot;</a> ASPLOS, 2026</p>
-<p><strong>[HPCA26]</strong> Chihun Song, Austin Antony Cruz, Michael Jaemin Kim, <strong>Minbok Wi</strong>, Gaohan Ye, Kyungsan Kim, Sangyeol Lee, Jung Ho Ahn, and Nam Sung Kim, <a href="https://ieeexplore.ieee.org/abstract/document/11408527">&quot;ReScue: Reliable and Secure CXL Memory,&quot;</a> HPCA, 2026</p>
-<p><strong>[CAL25]</strong> Jumin Kim, Seungmin Baek, <strong>Minbok Wi</strong>, Hwayong Nam, Michael Jaemin Kim, Sukhan Lee, Kyomin Sohn, and Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/abstract/document/11074718">&quot;Per-Row Activation Counting on Real Hardware: Demystifying Performance Overheads,&quot;</a> IEEE Computer Architecture Letters (Volume: 24, Issue: 2, July-Dec. 2025): 217-220 [<strong>Best of CAL</strong>]</p>
-<p><strong>[DRAMSec25]</strong> <strong>Minbok Wi</strong>, Seungmin Baek, Seonyong Park, Mattan Erez, and Jung Ho Ahn, <a href="https://arxiv.org/abs/2506.15918">&quot;Sudoku: Decomposing DRAM Address Mapping into Component Functions,&quot;</a> DRAMSec, 2025</p>
-<p><strong>[ASPLOS25]</strong> Seungmin Baek, <strong>Minbok Wi</strong>, Seonyong Park, Hwayong Nam, Michael Jaemin Kim, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/10.1145/3669940.3707242">&quot;Marionette: A RowHammer Attack via Row Coupling,&quot;</a> ASPLOS, 2025</p>
-<p><strong>[ISCA24]</strong> Hwayong Nam, Seungmin Baek, <strong>Minbok Wi</strong>, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/10.1109/ISCA59077.2024.00083">&quot;DRAMScope: Uncovering DRAM Microarchitecture and Characteristics  by Issuing Memory Commands,&quot;</a> ISCA, 2024</p>
-<p><strong>[ASPLOS24]</strong> Chihun Song, Michael Jaemin Kim, Tianchen Wang, Houxiang Ji, Jinghan Huang, Ipoom Jeong, Jaehyun Park, Hwayong Nam, <strong>Minbok Wi</strong>, Jung Ho Ahn, Nam Sung Kim, <a href="https://dl.acm.org/doi/10.1145/3620666.3651325">&quot;TAROT: A CXL SmartNIC- Based Defense Against Multi-bit Errors by Row-Hammer Attacks,&quot;</a> ASPLOS, 2024</p>
-<p><strong>[CAL23]</strong> Hwayong Nam, Seungmin Baek, <strong>Minbok Wi</strong>, Michael Jaemin Kim, Jaehyun Park, Chihun Song, Nam Sung Kim, Jung Ho Ahn, <a href="https://dl.acm.org/doi/abs/10.1109/LCA.2023.3296153">&quot;X-ray: Discovering DRAM Internal Structure and Error Characteristics by Issuing Memory Commands,&quot;</a> IEEE Computer Architecture Letters (Volume: 22, Issue: 2, July-Dec. 2023): 89-92</p>
-<p><strong>[MICRO23]</strong> Michael Jaemin Kim, <strong>Minbok Wi</strong>, Jaehyun Park, Seoyoung Ko, Jaewan Choi, Hwayong Nam, Nam Sung Kim, Jung Ho Ahn, Eojin Lee, <a href="https://ieeexplore.ieee.org/document/10411397">&quot;How to Kill the Second Bird with One ECC: The Pursuit of Row Hammer Resilient DRAM,&quot;</a> MICRO, 2023</p>
-<p><strong>[HPCA23]</strong> <strong>Minbok Wi*</strong>, Jaehyun Park*, Seoyoung Ko, Michael Jaemin Kim, Nam Sung Kim, Eojin Lee, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/10070966">&quot;SHADOW: Preventing Row Hammer in DRAM using Intra-Subarray Row-Shuffling,&quot;</a> HPCA, 2023 (*equally contributed)</p>
-<p><strong>[TC20]</strong> Byeongho Kim, Jongwook Chung, Eojin Lee, Wonkyung Jung, Sunjung Lee, Jaewan Choi, Jaehyun Park, <strong>Minbok Wi</strong>, Sukhan Lee, Jung Ho Ahn, <a href="https://ieeexplore.ieee.org/document/9055168">&quot;MViD: Sparse Matrix-Vector Multiplication in Mobile DRAM for Accelerating Recurrent Neural Networks,&quot;</a> IEEE Transactions on Computers (Volume: 69, Issue: 7, 01 July 2020): 955-967</p>
-<hr>
 
+  <script>
+    (function () {
+      var root = document.documentElement;
 
-  </main>
-  <footer><footer>
-  <p>
-    Copyright © 2026 Minbok Wi
-  </p>
-</footer>
-</footer>
+      var blogTab = document.getElementById('blog-tab');
+      var blogList = document.getElementById('blog-list');
+      if (blogTab && blogList) {
+        blogTab.addEventListener('click', function () {
+          var open = blogList.hidden;
+          blogList.hidden = !open;
+          blogTab.setAttribute('aria-expanded', open ? 'true' : 'false');
+          blogTab.classList.toggle('is-active', open);
+        });
+      }
 
-    
+      var invert = document.getElementById('invert');
+      if (invert) {
+        var currentTheme = function () {
+          var t = root.getAttribute('data-theme');
+          if (t === 'dark' || t === 'light') return t;
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        invert.addEventListener('click', function () {
+          var nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', nextTheme);
+          try { localStorage.setItem('theme', nextTheme); } catch (e) {}
+        });
+      }
+    })();
+  </script>
 </body>
 
 </html>
