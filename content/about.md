@@ -5,7 +5,7 @@ title = "About"
   list = "never"
 +++
 
-Hello! I'm Minbok Wi.
+Hello! I'm Minbok Wi (<span lang="ko">위민복</span>).
 
 I am a Staff Engineer in the AP Architecture Group (MX Division) at Samsung Electronics. As
 a performance architect, I model and develop the subsystems of mobile Application

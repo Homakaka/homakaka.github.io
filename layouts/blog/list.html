@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ .Title }} &middot; {{ .Site.Params.brand | default .Site.Title }}</title>
   {{- partial "favicon.html" . -}}
-  {{- partial "seo_tags.html" . -}}
+  {{- partial "seo.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
   {{- partial "site-style.html" . -}}
